@@ -1,3 +1,6 @@
 ﻿#headingtable {
     width: 100%;
 }
+#headingtable tr td {
+    width: 33%;
+}
