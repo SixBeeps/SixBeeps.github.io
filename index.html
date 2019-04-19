@@ -5,25 +5,47 @@
     <meta charset="utf-8" />
     <title>Le epic website</title>
     <style>
-    /* wow look at the beautiful organization i got here */
-    body { background-image: url("https://assets.wordpress.envato-static.com/uploads/2017/04/My-website-is-terrible.gif"); font-family: 'Comic Sans MS', cursive; color: magenta; }
-    h1 {
-        font-style: oblique;
-        text-decoration: wavy;
-    }
-    #heading {
-        text-align: center;
-        margin-bottom: 16px;
-    }
-    #whereto {
-        background-color: chartreuse;
-        font-family: Impact;
-        padding: 5px;
-    }
-    #whereto a {
-        color: purple;
-    }
+        /* wow look at the beautiful organization i got here */
+        body {
+            background-image: url("https://assets.wordpress.envato-static.com/uploads/2017/04/My-website-is-terrible.gif");
+            font-family: 'Comic Sans MS', cursive;
+            color: magenta;
+        }
+
+        h1 {
+            font-style: oblique;
+            text-decoration: wavy;
+        }
+
+        #heading {
+            text-align: center;
+            margin-bottom: 16px;
+        }
+
+        #whereto {
+            background-color: chartreuse;
+            font-family: Impact;
+            padding: 5px;
+        }
+
+            #whereto a {
+                color: purple;
+            }
     </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("tr").mouseenter(function () {
+                $("#hList").hide();
+                $("table").append("<td id=\"yeet\">no no no<td>");
+            });
+            $("tr").mouseleave(function () {
+                $("#hList").show();
+                $("#yeet").remove();
+            });
+        });
+    </script>
+    <link rel="icon" type="image/png" href="https://sixbeeps.github.io/sixbeepslogo.png" />
 </head>
 <body>
     <div id="heading">
@@ -33,7 +55,7 @@
     <div id="whereto">
         <h2>Where to?</h2>
         <table>
-            <tr>
+            <tr id="hList">
                 <td><a href="/list.html">The songs LOL</a></td>
                 <td><a href="https://www.badbirdgames.weebly.com/">such old site</a></td>
             </tr>
