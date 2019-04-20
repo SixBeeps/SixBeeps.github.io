@@ -38,6 +38,7 @@ h1 {
     border-radius: 16px;
     background-color: greenyellow;
     color: darkgreen;
+    padding: 7px;
 }
     .table-default tr {
         border: 1px solid darkgreen;
