@@ -34,16 +34,19 @@
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
-        $(document).ready(function () {
-            $("tr").mouseenter(function () {
-                $("#hList").hide();
-                $("table").append("<td id=\"yeet\">no no no<td>");
+        var d = new Date()
+        if (d.getMonth() == 3 && d.getDate() == 1) {
+            $(document).ready(function () {
+                $("#whereto").mouseenter(function () {
+                    $("#hList").hide();
+                    $("#whereto").append("<td id=\"yeet\">no no no<td>");
+                });
+                $("#whereto").mouseleave(function () {
+                    $("#hList").show();
+                    $("#yeet").remove();
+                });
             });
-            $("tr").mouseleave(function () {
-                $("#hList").show();
-                $("#yeet").remove();
-            });
-        });
+        }
     </script>
     <link rel="icon" type="image/png" href="https://sixbeeps.github.io/sixbeepslogo.png" />
 </head>
