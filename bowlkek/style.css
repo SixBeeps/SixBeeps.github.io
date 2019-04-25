@@ -1,0 +1,12 @@
+body {
+	background-image: url("https://github.com/ppy/osu-resources/raw/master/osu.Game.Resources/Textures/Backgrounds/bg1.jpg");
+	background-attachment: fixed;
+}
+p {
+	color: magenta;
+	font-size: 36pt;
+	font-family: cursive;
+	position: relative;
+	text-align: center;
+	width: 100%;
+}
