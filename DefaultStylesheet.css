@@ -17,6 +17,8 @@
     #tablelabels a {
         color: black;
         cursor: pointer;
+        -moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; -o-user-select: none;
+        letter-spacing: -3px;
     }
 #content-wrapper {
     margin-top: 64px;
@@ -32,6 +34,15 @@ a {
 h1 {
     text-align: center;
     color: darkseagreen;
+}
+h2 {
+    text-align: center;
+    color: limegreen;
+    font-weight: 600;
+}
+h3 {
+    color: limegreen;
+    font-weight: 500;
 }
 .table-default {
     border: 2px solid darkgreen;
