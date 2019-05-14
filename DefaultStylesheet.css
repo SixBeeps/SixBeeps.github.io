@@ -50,6 +50,7 @@ h3 {
     background-color: greenyellow;
     color: darkgreen;
     padding: 7px;
+    max-width: 75%;
 }
     .table-default tr {
         border: 1px solid darkgreen;
