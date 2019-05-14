@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Games Listing</title>
+    <link rel="stylesheet" type="text/css" href="DefaultStylesheet.css">
+    <link rel="icon" type="image/png" href="https://sixbeeps.github.io/sixbeepslogo.png" />
+    <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+    <script type="text/javascript">
+        function sortTable(col) {
+            var table, rows, switching, i, x, y, shouldSwitch;
+            table = document.getElementById("listTable");
+            switching = true;
+            /* Make a loop that will continue until
+            no switching has been done: */
+            while (switching) {
+              // Start by saying: no switching is done:
+              switching = false;
+              rows = table.rows;
+              /* Loop through all table rows (except the
+              first, which contains table headers): */
+              for (i = 1; i < (rows.length - 1); i++) {
+                // Start by saying there should be no switching:
+                shouldSwitch = false;
+                /* Get the two elements you want to compare,
+                one from current row and one from the next: */
+                x = rows[i].getElementsByTagName("TD")[col];
+                y = rows[i + 1].getElementsByTagName("TD")[col];
+                // Check if the two rows should switch place:
+                if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                  // If so, mark as a switch and break the loop:
+                  shouldSwitch = true;
+                  break;
+                }
+              }
+              if (shouldSwitch) {
+                /* If a switch has been marked, make the switch
+                and mark that a switch has been done: */
+                rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                switching = true;
+              }
+            }
+        }  
+    </script>
+</head>
+<body>
+    <div id="header-wrapper">
+        <a href="https://sixbeeps.github.io/index.html">< Go Back</a>
+        <h1>Games Listing</h1>
+    </div>
+    <div id="content-wrapper">
+        <table class="table-default" id="listTable" align="center">
+            <tr id="tablelabels">
+                <td>Title <a onclick="sortTable(0)">[▼]</a></td>
+                <td>Background <a onclick="sortTable(1)">[▼]</a></td>
+                <td>Last Updated (MM/DD/YYYY) <a onclick="sortTable(2)">[▼]</a></td>
+            </tr>
+            <tr>
+                <td><a href="/RINGthym/index.html">RINGthym</a></td>
+                <td>After having played <a href="https://osu.ppy.sh/">osu!</a> for about 3 years, I had grown fond of rhythm games as a genre. So, I decided to make my own. This was my first ever rhythm game, and it built the foundation for what kind of games I was going to make.</td>
+                <td>5-14-2019</td>
+            </tr>
+            <tr>
+                <td><a href="https://drive.google.com/open?id=1TiOHF1vaSMEkHRRhMR5ROIspgatsK_B7">Train Jomp</a></td>
+                <td>By the time I was deep into developing RINGthym, I had surrounded myself with a community of different experienced game developers, who eventually became my e-friends. One day, we decided to do a 2-hour long game jam, with the theme being "Trains." This was my final entry, and it won 1st among 3 entries total.</td>
+                <td>5-14-2019</td>
+            </tr>
+        </table>
+        <div id="faq" style="width: 75%; margin-left: 12.5%;">
+            <h2>(Not So) Frequently Asked Questions</h2>
+            <h3>What engine do you use?</h3>
+            <p style="color: white;"><a href="https://www.unity3d.com">Unity</a> all the way.</p>
+            <h3>Where did you learn to make games?</h3>
+            <p style="color: white;">When I was young (~11 years old) I was enrolled in a place called <a href="https://www.game-u.com">Game-U</a>, which is an after-school program that is taught by industry-trained game developers. Originally, it was pretty small, but after a year or so, I watched as it grew and grew into what it is now. I was even employed there when I became 16.</p>
+        </div>
+    </div>
+</body>
+</html>
