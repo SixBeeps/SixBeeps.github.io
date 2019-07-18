@@ -11,6 +11,34 @@
 #headingtable tr td {
     width: 33%;
 }
+#heading {
+    width: 100vw;
+    height: 32px;
+    padding: 4px;
+    background-color: white;
+}
+
+    #heading:nth-child(1n+0) {
+        width: auto;
+        height: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: auto;
+    }
+.heading-button {
+    height: 64px;
+}
+
+#heading-nav {
+    display: inline-block;
+    margin-left: 4px;
+    padding: 8px 0;
+}
+
+    #heading-nav > * {
+        margin-right: 4px;
+    }
 #tablelabels {
     font-weight: bold;
 }
@@ -24,7 +52,12 @@
     margin-top: 64px;
 }
 body {
-    background-image: url("http://www.photos-public-domain.com/wp-content/uploads/2012/05/forest-green-paper-texture.jpg");
+    background-image: url('media/bg.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
     font-family: 'Exo 2', sans-serif;
 }
 a {
@@ -33,22 +66,17 @@ a {
 }
 h1 {
     text-align: center;
-    color: darkseagreen;
 }
 h2 {
     text-align: center;
-    color: limegreen;
     font-weight: 600;
 }
 h3 {
-    color: limegreen;
     font-weight: 500;
 }
 .table-default {
-    border: 2px solid darkgreen;
-    border-radius: 16px;
-    background-color: greenyellow;
-    color: darkgreen;
+    border-radius: 8px;
+    background-color: white;
     padding: 7px;
     max-width: 75%;
 }
@@ -56,7 +84,7 @@ h3 {
         border: 1px solid darkgreen;
     }
     .table-default a {
-        color: darkolivegreen;
+        color: gray;
     }
 
 /*Debug CSS

@@ -3,68 +3,25 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title>Le epic website</title>
-    <style>
-        /* wow look at the beautiful organization i got here */
-        body {
-            background-image: url("https://assets.wordpress.envato-static.com/uploads/2017/04/My-website-is-terrible.gif");
-            font-family: 'Comic Sans MS', cursive;
-            color: magenta;
-        }
-
-        h1 {
-            font-style: oblique;
-            text-decoration: wavy;
-        }
-
-        #heading {
-            text-align: center;
-            margin-bottom: 16px;
-        }
-
-        #whereto {
-            background-color: chartreuse;
-            font-family: Impact;
-            padding: 5px;
-        }
-
-            #whereto a {
-                color: purple;
-            }
-    </style>
+    <title>SixBeeps</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>
-        var d = new Date()
-        if (d.getMonth() == 3 && d.getDate() == 1) {
-            $(document).ready(function () {
-                $("#whereto").mouseenter(function () {
-                    $("#hList").hide();
-                    $("#whereto").append("<td id=\"yeet\">april fools<td>");
-                });
-                $("#whereto").mouseleave(function () {
-                    $("#hList").show();
-                    $("#yeet").remove();
-                });
-            });
-        }
-    </script>
-    <link rel="icon" type="image/png" href="https://sixbeeps.github.io/sixbeepslogo.png" />
+    <link rel="stylesheet" type="text/css" href="LandingStylesheet.css">
+    <link rel="icon" type="image/png" href="media/sixbeepslogo_nobg.png" />
 </head>
 <body>
     <div id="heading">
-        <h1>Welcome to my website</h1>
-        <h2>this is Brandon's website and his website only</h2>
+        <a href="https://sixbeeps.github.io/index.html"><img src="https://sixbeeps.github.io/media/sixbeepslogo_nobg.png" width="64" /></a>
+        <div id="heading-nav">
+            <a href="list.html"><img class="heading-button" src="media/btn-music.png"></a>
+            <a href="Games/list.html"><img class="heading-button" src="media/btn-games.png"></a>
+        </div>
     </div>
-    <div id="whereto">
-        <h2>Where to?</h2>
-        <table>
-            <tr id="hList">
-                <td><a href="/list.html">The songs LOL</a></td>
-                <td><a href="https://www.badbirdgames.weebly.com/">such old site</a></td>
-                <td><a href="/Games/list.html">Vidya Gmaes</a></td>
-                <td><a href="/bowlkek/index.html">bowlkek</a></td>
-            </tr>
-        </table>
+    <div id="main-container">
+        <div id="greeting-container">
+            <h2>Hello, I'm SixBeeps</h2>
+            <h3 class="shush">(or Brandon Lee, whichever works)</h3>
+            <img src="media/photo.png" />
+        </div>
     </div>
 </body>
 </html>
