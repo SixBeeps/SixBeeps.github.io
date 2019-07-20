@@ -1,5 +1,6 @@
 ﻿body {
-    background-image: url('media/bg.png');
+    /*background-image: url('media/bg.png');*/
+    background: linear-gradient(to bottom right, green, lightgreen);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
