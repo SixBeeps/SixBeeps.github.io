@@ -11,14 +11,14 @@
 #headingtable tr td {
     width: 33%;
 }
-#heading {
+.hf {
     width: 100vw;
     height: 32px;
     padding: 4px;
     background-color: white;
 }
 
-    #heading:nth-child(1n+0) {
+    .hf:nth-child(1n+0) {
         width: auto;
         height: 100%;
         display: block;
@@ -52,7 +52,7 @@
     margin-top: 64px;
 }
 body {
-    background-image: url('media/bg.png');
+    background: linear-gradient(to bottom right, green, lightgreen);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -82,7 +82,11 @@ h3 {
 }
     .table-default tr {
         border: 1px solid darkgreen;
+        border-bottom: 1px solid black;
     }
+        .table-default tr:last-child {
+            border-bottom: none;
+        }
     .table-default a {
         color: gray;
     }
