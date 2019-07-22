@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Writings</title>
+    <link rel="stylesheet" type="text/css" href="https://sixbeeps.github.io/DefaultStylesheet.css">
+    <link rel="icon" type="image/png" href="https://sixbeeps.github.io/media/sixbeepslogo_nobg.png" />
+    <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+    <script type="text/javascript">
+        function sortTable(col) {
+            var table, rows, switching, i, x, y, shouldSwitch;
+            table = document.getElementById("listTable");
+            switching = true;
+            /* Make a loop that will continue until
+            no switching has been done: */
+            while (switching) {
+                // Start by saying: no switching is done:
+                switching = false;
+                rows = table.rows;
+                /* Loop through all table rows (except the
+                first, which contains table headers): */
+                for (i = 1; i < (rows.length - 1); i++) {
+                    // Start by saying there should be no switching:
+                    shouldSwitch = false;
+                    /* Get the two elements you want to compare,
+                    one from current row and one from the next: */
+                    x = rows[i].getElementsByTagName("TD")[col];
+                    y = rows[i + 1].getElementsByTagName("TD")[col];
+                    // Check if the two rows should switch place:
+                    if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                        // If so, mark as a switch and break the loop:
+                        shouldSwitch = true;
+                        break;
+                    }
+                }
+                if (shouldSwitch) {
+                    /* If a switch has been marked, make the switch
+                    and mark that a switch has been done: */
+                    rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                    switching = true;
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="hf">
+        <a href="https://sixbeeps.github.io/index.html"><img src="https://sixbeeps.github.io/media/sixbeepslogo_nobg.png" width="64" /></a>
+        <div id="heading-nav">
+            <a href="https://sixbeeps.github.io/list.html"><img class="heading-button" src="https://sixbeeps.github.io/media/btn-music.png"></a>
+            <a href="list.html"><img class="heading-button" src="https://sixbeeps.github.io/media/btn-games.png"></a>
+        </div>
+    </div>
+    <div id="header-wrapper">
+        <h1>Writings</h1>
+    </div>
+    <div id="content-wrapper">
+        <table class="table-default" id="listTable" align="center">
+            <tr id="tablelabels">
+                <td>Title <a onclick="sortTable(0)">[▼]</a></td>
+                <td>Preview Link <a onclick="sortTable(1)">[▼]</a></td>
+            </tr>
+            <tr>
+                <td>Do It To 'Em</td>
+                <td><a href="Do It To Em.pdf">Do It To Em.pdf</a></td>
+            </tr>
+            
+        </table>
+        <div id="faq" style="width: 75%; margin-left: 12.5%;">
+            <h2>(Not So) Frequently Asked Questions</h2>
+            <h3>Can I use your work?</h3>
+            <p style="color: white;"><b>Sure!</b> Just make sure to put my name (Brandon Lee) and/or my stage name (SixBeeps) in the credits or alongside the song's context.</p>
+            <p style="color: darkred; background-color: lightcoral;"><b>You are not allowed to use any of the songs with the * next to them!</b></p>
+            <h3>What do you use to make your music?</h3>
+            <p style="color: white;">I mainly use <a href="http://www.xewton.com">Music Studio 2</a> to make my songs and <a href="https://www.cloudconvert.com">CloudConvert</a> to convert them to MP3 files. I have also used a bit of <a href="https://www.image-line.com/flstudio/">FL Studio</a> for a few of my tracks.</p>
+            <h3>I like this stuff! Can I listen to some more?</h3>
+            <p style="color: white;">L👀ky here: <a href="https://niorg2606.newgrounds.com/audio">https://niorg2606.newgrounds.com/audio</a></p>
+        </div>
+    </div>
+</body>
+</html>
