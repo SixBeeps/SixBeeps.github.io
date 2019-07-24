@@ -20,24 +20,13 @@
     background: black;
 }
 
-.heading-button {
-    height: 64px;
-}
 
-#heading-nav {
-    display: inline-block;
-    margin-left: 4px;
-    padding: 8px 0;
-}
-
-    #heading-nav > * {
-        margin-right: 4px;
-    }
 
 #main-container {
     width: calc(100% - 32px);
     height: 100vh;
     margin: 8px;
+    margin-top: 128px;
     padding: 8px;
     display: inline-flex;
 }
@@ -64,6 +53,13 @@
     border-radius: 8px;
 }
 
+.description-imgs {
+    display: inline-block;
+}
+.description-imgs img {
+    width: 64px;
+}
+
 .shush {
     font-style: oblique;
     font-weight: 100;
@@ -71,7 +67,7 @@
 }
 
 .hf {
-    width: 100vw;
+    width: 100%;
     height: 32px;
     padding: 4px;
     background-color: white;
@@ -80,8 +76,6 @@
     .hf:nth-child(1n+0) {
         width: auto;
         height: 100%;
-        display: block;
         margin-left: auto;
         margin-right: auto;
-        overflow: auto;
     }
