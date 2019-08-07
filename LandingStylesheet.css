@@ -81,6 +81,6 @@
     }
 
 #description-container a {
-    color: green;
+    color: green !important;
     font-weight: bold;
 }
