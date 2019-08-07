@@ -79,3 +79,8 @@
         margin-left: auto;
         margin-right: auto;
     }
+
+#description-container a {
+    color: green;
+    font-weight: bold;
+}

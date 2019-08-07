@@ -1,0 +1,81 @@
+﻿@font-face {
+    font-family: "Determination Mono";
+    src: url('DTM-Mono.otf');
+}
+
+body {
+    background-color: #FFC281;
+    font-family: 'Determination Mono', Helvetica;
+}
+
+#headbar {
+    border-bottom: 2px solid #323232;
+}
+
+#headbar > * {
+    display: inline-block;
+}
+
+h1 a {
+    color: #842400;
+    font-size: 42px;
+}
+
+h2 {
+    color: #323232;
+    font-size: 24px;
+    font-style: oblique;
+}
+
+h3 {
+    text-align: center;
+    font-weight: normal;
+    margin: 0;
+}
+
+#main-panel {
+    margin: 16px;
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+}
+
+.card {
+    width: 180px;
+    height: 270px;
+    background-color: maroon;
+    border-radius: 8px;
+    color: white;
+    position: relative;
+    font-size: 14px;
+}
+    .card img {
+        width: 100px;
+        position: relative;
+        left: 30px;
+        
+    }
+
+.card-info {
+    width: calc(100% - 8px);
+    height: calc(50% - 8px);
+    padding: 4px;
+    background-color: white;
+    color: #323232;
+    position: absolute;
+    bottom: 0;
+    border-radius: 8px;
+}
+
+.guide-image {
+    height: 350px;
+    border: 2px solid black;
+    box-shadow: 8px 8px 10px 0 black;
+}
+
+.help-inlineimages {
+    margin: 32px;
+}
