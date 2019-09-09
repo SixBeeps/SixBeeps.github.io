@@ -40,7 +40,7 @@ h3 {
     border-radius: 8px;
     height: 90vh;
     display: grid;
-    grid-template-columns: 200px 200px 200px;
+    grid-template-columns: 200px 200px 200px 200px;
 }
 
 .card {
